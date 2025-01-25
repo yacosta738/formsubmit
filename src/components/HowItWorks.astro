@@ -1,0 +1,75 @@
+<section class="how-it-works py-16">
+  <h2 class="text-3xl font-bold text-center mb-12">How it works</h2>
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div class="form-demo bg-gray-100 p-8 rounded-lg">
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Name">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Email">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" rows="3" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Submit</button>
+      </form>
+    </div>
+
+    <div class="process-steps space-y-8">
+      <div class="step flex items-start gap-4">
+        <div class="icon bg-blue-100 p-2 rounded-full">
+          <svg class="w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-1">Spam blocked, data validated</h3>
+          <p class="text-gray-600">We validate your data server-side and use machine learning to protect you from spam</p>
+        </div>
+      </div>
+
+      <div class="step flex items-start gap-4">
+        <div class="icon bg-green-100 p-2 rounded-full">
+          <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-1">Email notifications and auto-responses</h3>
+          <p class="text-gray-600">Our email templates are fully customizable</p>
+        </div>
+      </div>
+
+      <div class="step flex items-start gap-4">
+        <div class="icon bg-purple-100 p-2 rounded-full">
+          <svg class="w-6 h-6 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-1">Submissions saved to your inbox</h3>
+          <p class="text-gray-600">View submissions, see daily analytics reports, and export to CSV or JSON</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    ring: 2px solid #3b82f6;
+  }
+</style>

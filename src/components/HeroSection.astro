@@ -1,0 +1,18 @@
+---
+import { Code } from 'astro-expressive-code/components';
+import GetStartedButton from './GetStartedButton.astro';
+import importedCodeHtml from '../assets/example-form.html?raw';
+---
+<section class="hero py-16 text-center">
+  <h1 class="text-4xl font-bold mb-4">The form solution for any developer</h1>
+  <p class="text-xl text-gray-600 mb-8">Use your own frontend code. Submit to our API. We'll handle the rest.</p>
+
+  <div class="my-2 p-8 rounded-lg max-w-2xl mx-auto">
+    <Code code={importedCodeHtml} 
+      title="example-form.html"
+      lang="html" 
+      />
+  </div>
+
+  <GetStartedButton />
+</section>

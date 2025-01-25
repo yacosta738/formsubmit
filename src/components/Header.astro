@@ -1,0 +1,27 @@
+---
+import GetStartedButton from './GetStartedButton.astro';
+---
+<header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="flex items-center">
+          <a href="/" class="text-2xl font-bold text-indigo-600">FormFlow</a>
+        </div>
+        <nav>
+          <ul class="flex space-x-8">
+            <li><a href="#features" class="text-gray-600 hover:text-indigo-600">Features</a></li>
+            <li><a href="#pricing" class="text-gray-600 hover:text-indigo-600">Pricing</a></li>
+            <li><a href="#demo" class="text-gray-600 hover:text-indigo-600">Demo</a></li>
+            <li><GetStartedButton /></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <style>
+    a {
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+  </style>

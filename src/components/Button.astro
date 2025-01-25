@@ -1,0 +1,21 @@
+---
+interface Props {
+  href: string;
+  variant?: 'gradient' | 'solid';
+  class?: string;
+}
+
+const { href, variant = 'gradient', class: className = '' } = Astro.props;
+
+const baseStyles = "px-4 py-2 rounded-lg font-medium transition-all";
+const variants = {
+  gradient: "bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90",
+  solid: "bg-indigo-600 text-white hover:bg-indigo-700"
+};
+---
+<a 
+  href={href} 
+  class:list={[baseStyles, variants[variant], className]}
+>
+  <slot />
+</a>
